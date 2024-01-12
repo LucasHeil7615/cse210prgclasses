@@ -25,15 +25,15 @@ class Program
         }
         else if (Percentage > 60)
         {
-            Console.WriteLine($"Your grade: {Percentage} recieves an Poor OWL.");
+            Console.WriteLine($"Your grade: {Percentage} recieves a Poor OWL.");
         }
         else if (Percentage > 50)
         {
-            Console.WriteLine($"Your grade: {Percentage} recieves an Dreadful OWL.");
+            Console.WriteLine($"Your grade: {Percentage} recieves a Dreadful OWL.");
         }
         else
         {
-            Console.WriteLine($"Your grade: {Percentage} recieves an Troll OWL. I'd open the Howllers swiftly and get them over with. They'll explode if you don't.");
+            Console.WriteLine($"Your grade: {Percentage} recieves a Troll OWL. I'd open the Howllers swiftly and get them over with. They'll explode if you don't.");
         }
 
         if (Percentage > 85)
