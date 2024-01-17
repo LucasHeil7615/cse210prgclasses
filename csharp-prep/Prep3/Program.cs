@@ -6,10 +6,12 @@ class Program
     static void Main(string[] args){
         //  Start by asking the user for the magic number.
         Console.Write("What is the magic number? ");
-        int Magic_number = Console.ReadLine();
+        string Magic_number = Console.ReadLine();
+        int Magic_number = int.Parse(Magic_number);
         // Ask the user for a guess.
         Console.Write("What is your guess? ");
-        int Guess_num = Console.ReadLine();
+        string Guess_num = Console.ReadLine();
+        float Guess_num = int.Parse(Guess_num);
         // Using an if statement, determine if the user needs to guess higher or lower next time, or tell them if they guessed it.
         if (Magic_number > Guess_num){
             Console.WriteLine("Guess Higher.");
