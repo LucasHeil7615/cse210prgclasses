@@ -12,7 +12,7 @@ class Program
         do
         {
             Console.write("Enter a Number: ");
-            num1 int.Parse(Console.ReadLine());
+            num1 = int.Parse(Console.ReadLine());
             numbers.add(num1);
             
         } while (num1 != 0);
