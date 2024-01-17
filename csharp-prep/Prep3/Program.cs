@@ -31,7 +31,7 @@ class Program
             else
             {
                 Console.WriteLine("Congrats you guessed the number :)");
-                Console.Write($"You guessed {Guess_count} many times. ");
+                Console.Write($"You guessed {Guess_count} times. ");
             }
             
         } while (Guess_num != Magic_number);
