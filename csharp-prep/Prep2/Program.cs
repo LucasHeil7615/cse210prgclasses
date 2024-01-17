@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("Plase enter your grade percentage (Ex. 98.2, 65.4, 79.89,etc.): ");
+        Console.Write("Please enter your grade percentage (Ex. 98.2, 65.4, 79.89,etc.): ");
         String ValueFromUser = Console.ReadLine();
 
         float Percentage = float.Parse(ValueFromUser);

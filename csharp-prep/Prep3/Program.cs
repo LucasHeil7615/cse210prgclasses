@@ -1,15 +1,15 @@
 using System;
-using System.Runtime.CompilerServices;
-using System.Threading.Tasks.Dataflow;
+
 class Program
 {
     static void Main(string[] args){
         //  Start by asking the user for the magic number.
         Console.Write("What is the magic number? ");
-        string Magic_number = Console.ReadLine();
+        int Magic_number = int.Parse(Console.ReadLine());
         // Ask the user for a guess.
         Console.Write("What is your guess? ");
-        string Guess_num = Console.ReadLine();
+        //in line parse to change readline's string into an int
+        int Guess_num = int.Parse(Console.ReadLine());
         
         // Using an if statement, determine if the user needs to guess higher or lower next time, or tell them if they guessed it.
         if (Magic_number > Guess_num){
