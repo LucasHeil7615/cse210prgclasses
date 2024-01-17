@@ -4,20 +4,20 @@ class Program
 {
     static void Main(string[] args)
     {
-        int num1 = 0
+        int num1 = 0;
         List<int> numbers = new List<int>();
-        Console.writeline("Welcome to list calculator. Please enter you list of numbers. ")
-        cosole.writeline("We will give you the sum, average, and the largest number. ")
-        console.writeline("When you are finished please enter 0 and your results will be displayed. ")
+        Console.writeline("Welcome to list calculator. Please enter you list of numbers. ");
+        cosole.writeline("We will give you the sum, average, and the largest number. ");
+        console.writeline("When you are finished please enter 0 and your results will be displayed. ");
         do
         {
-            Console.write("Enter a Number: ")
+            Console.write("Enter a Number: ");
             num1 int.Parse(Console.ReadLine());
             numbers.add(num1);
             
         } while (num1 != 0);
 
-        Console.writeline($"The sum is: {numbers.Count}")
+        Console.writeline($"The sum is: {numbers.Count}");
     } 
 }
 // Finished product
