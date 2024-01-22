@@ -10,6 +10,6 @@ public class Job{
     
     public void Display(){
         // Software Engineer (Miscrosoft) 2019-2022
-        Console.WriteLine($"{-jobTitle} ({_company}) {startYear}-{_endYear}");
+        Console.WriteLine($"{_jobTitle} ({_company}) {_startYear}-{_endYear}");
     }
 }
