@@ -4,19 +4,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        Job job1 = new Job();
-        job1. _company = "Lego Store";
-        job1. _jobTitle = "Lego Master builder / Cashier";
-        job1. _startYear = 2025;
-        job1. _endYear = 2026;
-        job1.Display();
-
-        Job job2 = new Job();
-        job2. _company = "Lego Store";
-        job2. _jobTitle = "Lego Master builder / Manager";
-        job2. _startYear = 2026;
-        job2. _endYear = 2027;
-        job2.Display();
+        Job job1 = new Job("Target", "Front end Cashier,cart collector", 2018, 2019);
+    
+        Job job2 = new Job("Noble Craftmenship","Aprentice Carpenter",2021,2022);
+    
+        Resume Lucas = new Resume();
+        Lucas. _name = "Lucas Heil"
+        Lucas. _jobs. Add(job1)
+        Lucas. _jobs. Add(job2)
+        Lucas.Display
     }
 
 }

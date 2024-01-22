@@ -1,15 +1,24 @@
 public class Job{
 
-    public string _company;
+    private string company;
 
-    public string _jobTitle;
+    private string jobTitle;
     
-    public int _startYear;
+    private int startYear;
 
-    public int _endYear;
+    private int endYear;
+
+    public Job(string companyName, string title, int start, int end){
+        company = companyName;
+        jobTitle = title;
+        startYear = start;
+        endYear = end
+    }
     
-    public void Display(){
+    private void Display(){
         // Software Engineer (Miscrosoft) 2019-2022
-        Console.WriteLine($"{_jobTitle} ({_company}) {_startYear}-{_endYear}");
+        Console.WriteLine($"{jobTitle} ({company}) {startYear}-{endYear}");
     }
 }
+
+// _ tells the developer that this is a private variable
