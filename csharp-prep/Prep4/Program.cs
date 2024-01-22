@@ -6,18 +6,26 @@ class Program
     {
         int num1 = 0;
         List<int> numbers = new List<int>();
-        Console.writeline("Welcome to list calculator. Please enter you list of numbers. ");
-        cosole.writeline("We will give you the sum, average, and the largest number. ");
-        console.writeline("When you are finished please enter 0 and your results will be displayed. ");
-        do
+        Console.WriteLine("Welcome to list calculator. Please enter your list of numbers. ");
+        Console.WriteLine("We will give you the sum, average, and the largest number. ");
+        Console.WriteLine("When you are finished please enter 0 and your results will be displayed. ");
+        do 
         {
-            Console.write("Enter a Number: ");
+            numbers.Add(num1);
+            Console.Write("Enter a Number: ");
             num1 = int.Parse(Console.ReadLine());
-            numbers.add(num1);
-            
         } while (num1 != 0);
 
-        Console.writeline($"The sum is: {numbers.Count}");
+        int sum = 0;
+        foreach (int num in numbers)
+        {
+            Console.Write(num);
+        }
+
+        Console.WriteLine(" ");
+        Console.WriteLine($"The sum is {sum}.");
+        Console.WriteLine("The Average is ");
+        Console.WriteLine("The Largest number is ");
     } 
 }
 // Finished product
