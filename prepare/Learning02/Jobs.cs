@@ -1,12 +1,12 @@
 public class Job{
 
-    string _company;
+    public string _company;
 
-    string -jobTitle;
+    public string _jobTitle;
+    
+    public int _startYear;
 
-    int _startYear;
-
-    int _endYear;
+    public int _endYear;
     
     public void Display(){
         // Software Engineer (Miscrosoft) 2019-2022
