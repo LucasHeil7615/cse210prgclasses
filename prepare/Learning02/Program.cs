@@ -1,6 +1,6 @@
 using System;
 
-class Program
+public class Program
 {
     static void Main(string[] args)
     {
@@ -9,10 +9,10 @@ class Program
         Job job2 = new Job("Noble Craftmenship","Aprentice Carpenter",2021,2022);
     
         Resume Lucas = new Resume();
-        Lucas. _name = "Lucas Heil"
-        Lucas. _jobs. Add(job1)
-        Lucas. _jobs. Add(job2)
-        Lucas.Display
+        Lucas.name = "Lucas Heil";
+        Lucas.jobs.Add(job1);
+        Lucas.jobs.Add(job2);
+        Lucas.Display();
     }
 
 }

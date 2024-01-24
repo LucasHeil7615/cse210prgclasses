@@ -1,12 +1,12 @@
 public class Resume {
 
-    public string = _name;
+    public string name;
 
     public List<Job> jobs = new List<Job>();
 
     public void Display(){
-        foreach (Job job in _jobs) {
-            job.Display();
+        foreach (Job pizza in jobs) {
+            pizza.Display();
         }
     }
 }

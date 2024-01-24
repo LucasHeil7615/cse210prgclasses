@@ -1,21 +1,21 @@
 public class Job{
 
-    private string company;
+    public string company;
 
-    private string jobTitle;
+    public string jobTitle;
     
-    private int startYear;
+    public int startYear;
 
-    private int endYear;
+    public int endYear;
 
     public Job(string companyName, string title, int start, int end){
         company = companyName;
         jobTitle = title;
         startYear = start;
-        endYear = end
+        endYear = end;
     }
     
-    private void Display(){
+    public void Display(){
         // Software Engineer (Miscrosoft) 2019-2022
         Console.WriteLine($"{jobTitle} ({company}) {startYear}-{endYear}");
     }
