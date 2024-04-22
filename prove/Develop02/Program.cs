@@ -1,11 +1,13 @@
 using System;
+using System.IO;
+using System.Collections.Generic;
+
 
 class Program
 {
-    static void Main(string[] args)
+    public void Main(string[] args)
     {
-        JournalApp journalApp = new journalApp();
-        
+        JournalApp JournalApp = new JournalApp();
+        JournalApp.Journal();
     }
 }
-

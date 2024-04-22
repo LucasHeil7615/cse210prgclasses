@@ -1,8 +1,10 @@
 using System;
-using System.IO.Enumeration;
 using System.IO;
+using System.Collections.Generic;
+
+
 public static class PromptGenerator {
-private static readonly string[] promptsArray =
+public static readonly string[] PromptsArray =
 {
     "What was your favorite color of the day? describe How that color stood out.",
     "Who was the most interesting person I interacted with today?",
@@ -21,15 +23,18 @@ private static readonly string[] promptsArray =
     "What deep thought did you have today?",
     "What is your greatest desire?"
 };
-// Random number generator
-    private static Random random = new Random();
-    //method to pull a random prompt
-        public static string GetRandomPrompt()
+//Creating an object named random 
+public static Random random = new Random();
+
+    // Static method to get a random string from the array
+public static string GetRandomPrompt()
     {
         // Get a random index from the array
-        int randomIndex = random.Next(0,promptsArray.Length);
-
+        int randomIndex = random.Next(0,PromptsArray.Length);
+        //saving the pulled string into a variable
+        string randprompt = PromptsArray[randomIndex];
         // Return the string at the random index
-        return promptsArray[randomIndex];
+        return randprompt;
     }
+
 }

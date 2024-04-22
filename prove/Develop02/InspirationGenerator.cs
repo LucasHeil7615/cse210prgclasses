@@ -1,10 +1,12 @@
 using System;
-using System.IO.Enumeration;
 using System.IO;
+using System.Collections.Generic;
+
+
 class InspirationGenerator
 {
 // An array of quotes saved as strings 
-private static readonly string[] inspirationArray =
+public static readonly string[] InspirationArray =
 {
    "Journal writing is a voyage to the interior. - Christina Baldwin",
 
@@ -64,17 +66,18 @@ private static readonly string[] inspirationArray =
 
 "In the middle of difficulty lies opportunity. - Albert Einstein",
 };
-    // Random number generator
-    public Random random = new Random();
+ // Random number generator
+public static Random random = new Random();
 
     // Static method to get a random string from the array
-    string quote = GetRandomQuote()
+public static string GetRandomQuote()
     {
         // Get a random index from the array
         int randomIndex = random.Next(0,InspirationArray.Length);
-
+        // Saving the pulled string into a variable 
+        string randquote = InspirationArray[randomIndex];
         // Return the string at the random index
-        return InspirationArray[randomIndex];
+        return randquote;
     }
 
 }
