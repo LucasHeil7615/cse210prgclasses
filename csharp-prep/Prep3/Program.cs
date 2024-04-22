@@ -9,7 +9,7 @@ class Program
         int Magic_number = randomGenerator.Next(1,100);
         int Guess_num = 0;
         int Guess_count = 0;
-        //Create a Do While loop to lop through the task until Magic number is equal to guess
+        //Create a Do While loop to loop through the task until Magic number is equal to guess
         do{
             // Generaate a random number from 1 - 100
          
